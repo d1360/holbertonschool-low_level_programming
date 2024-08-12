@@ -4,18 +4,18 @@
  * main - Entry point
  *
  * Description: Prints the alphabet in lowercase, excluding 'q' and 'e',
- * using putchar exactly twice.
+ * followed by a new line.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	char ch;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (c != 'e' && c != 'q')
+		if (ch != 'e' && ch != 'q')
 		{
-			putchar(c);
+			putchar(ch);
 		}
 	}
 	putchar('\n');
