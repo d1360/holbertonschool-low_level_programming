@@ -2,8 +2,8 @@
  * File: 102-print_comb5.c
  * Auth: Your Name
  * Desc: Prints all possible combinations of two two-digit numbers.
- *        The numbers are separated by a space and combinations are 
- *        separated by a comma followed by a space. Each number is 
+ *        The numbers are separated by a space and combinations are
+ *        separated by a comma followed by a space. Each number is
  *        printed with two digits. No duplicate combinations are printed.
  */
 
@@ -22,27 +22,27 @@
  */
 int main(void)
 {
-    int i, j; /* Declare variables for the loops */
+	int i, j; /* Declare variables for the loops */
 
-    /* Loop through all combinations of two-digit numbers */
-    for (i = 0; i <= 99; i++)
-    {
-        for (j = i + 1; j <= 99; j++)
-        {
-            putchar((i / 10) + '0'); /* Print the tens digit of the first number */
-            putchar((i % 10) + '0'); /* Print the units digit of the first number */
-            putchar(' ');            /* Print a space between the two numbers */
-            putchar((j / 10) + '0'); /* Print the tens digit of the second number */
-            putchar((j % 10) + '0'); /* Print the units digit of the second number */
+	/* Loop through all combinations of two-digit numbers */
+	for (i = 0; i <= 99; i++)
+	{
+		for (j = i + 1; j <= 99; j++)
+		{
+			putchar((i / 10) + '0'); /* Print the tens digit of the first number */
+			putchar((i % 10) + '0'); /* Print the units digit of the first number */
+			putchar(' ');            /* Print a space between the two numbers */
+			putchar((j / 10) + '0'); /* Print the tens digit of the second number */
+			putchar((j % 10) + '0'); /* Print the units digit of the second number */
 
-            /* Print a comma and space unless it's the last combination */
-            if (i != 98 || j != 99)
-            {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-    putchar('\n'); /* Print a newline at the end */
-    return (0);
+			/* Print a comma and space unless it's the last combination */
+			if (i != 98 || j != 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n'); /* Print a newline at the end */
+	return (0);
 }
