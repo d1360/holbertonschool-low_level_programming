@@ -1,26 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
- *
- * Description: This program prints all single-digit numbers from 0 to 9,
- *              each followed by a comma and space, except for the last number.
- *              The program uses only the putchar function and avoids using 
- *              any char variables.
+ * main - Prints all possible different combinations of two digits.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int num;
+    int i, j;
 
-    for (num = 0; num <= 9; num++)
+    for (i = 0; i <= 8; i++)
     {
-        putchar(num + '0');
-        if (num != 9)
+        for (j = i + 1; j <= 9; j++)
         {
-            putchar(',');
-            putchar(' ');
+            putchar(i + '0');
+            putchar(j + '0');
+            if (i != 8 || j != 9)
+            {
+                putchar(',');
+                putchar(' ');
+            }
         }
     }
     putchar('\n');
