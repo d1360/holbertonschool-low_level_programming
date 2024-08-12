@@ -11,14 +11,14 @@
  */
 int main(void)
 {
-    char hex_digits[] = "0123456789abcdef";
-    int i;
+	char hex_digits[] = "0123456789abcdef";
+	int i;
 
-    for (i = 0; hex_digits[i] != '\0'; i++)
-    {
-        putchar(hex_digits[i]);
-    }
-    putchar('\n');
+	for (i = 0; hex_digits[i] != '\0'; i++)
+	{
+		putchar(hex_digits[i]);
+	}
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
