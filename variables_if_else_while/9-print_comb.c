@@ -5,9 +5,6 @@
  *
  * Description: This program prints all single-digit numbers from 0 to 9,
  *              each followed by a comma and space, except for the last number.
- *              The program uses only the putchar function and avoids using 
- *              any char variables.
- *
  * Return: Always 0 (Success)
  */
 int main(void)
