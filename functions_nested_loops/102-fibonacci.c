@@ -15,7 +15,7 @@ for (count = 3; count <= 50; count++)
 {
 c = a + b;
 if (count == 50)
-printf("%lu\n", c);
+printf(", %lu\n", c);
 else
 printf(", %lu", c);
 
