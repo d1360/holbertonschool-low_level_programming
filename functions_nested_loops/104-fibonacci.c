@@ -6,10 +6,11 @@ int main(void)
     unsigned long b_high = 0, b_low = 2;
     unsigned long c_high, c_low;
     unsigned long max = 1000000000;
+    int i;
 
     printf("%lu, %lu", a_low, b_low);
 
-    for (int i = 2; i < 98; i++)
+    for (i = 2; i < 98; i++)
     {
         c_low = a_low + b_low;
         c_high = a_high + b_high;
