@@ -15,9 +15,6 @@ printf("%lu, %lu", a, b);
 for (count = 3; count <= 98; count++)
 {
 c = a + b;
-if (count == 98)
-printf(", %lu", c);
-else
 printf(", %lu", c);
 a = b;
 b = c;
