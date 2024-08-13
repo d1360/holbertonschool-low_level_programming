@@ -15,7 +15,8 @@ for (i = 2; i < 98; i++)
 c_low = a_low + b_low;
 c_high = a_high + b_high;
 
-if (c_low >= max) {
+if (c_low >= max)
+{
 c_high += 1;
 c_low -= max;
 }
